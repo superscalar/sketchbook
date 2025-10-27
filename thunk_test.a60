@@ -1,0 +1,20 @@
+c̲o̲m̲m̲e̲n̲t̲ run with x1sim thunk_test.a60
+
+b̲e̲g̲i̲n̲
+    i̲n̲t̲e̲g̲e̲r̲ p̲r̲o̲c̲e̲d̲u̲r̲e̲ mod(n, m); v̲a̲l̲u̲e̲ n, m; i̲n̲t̲e̲g̲e̲r̲ n, m; b̲e̲g̲i̲n̲
+        mod := n - (n ÷ m * m);
+    e̲n̲d̲;
+	
+	p̲r̲o̲c̲e̲d̲u̲r̲e̲ p(x); i̲n̲t̲e̲g̲e̲r̲ x; b̲e̲g̲i̲n̲
+		x := x + 1;
+	e̲n̲d̲;
+
+    i̲n̲t̲e̲g̲e̲r̲ z;
+	z := 100;
+    PRINTTEXT(`Thunk test - assigning to a non-address thunk (2004)'); NLCR;
+    p(z*2);
+	print(z); NLCR;
+	PRINTTEXT(`Prints "Bad Destination" - read the compiler to see why'); NLCR;
+    
+    NLCR
+e̲n̲d̲
